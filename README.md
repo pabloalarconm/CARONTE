@@ -1,4 +1,4 @@
-# CartOnTe: Catcher for Ontological Terms.
+# CarOnTe: Catcher for Ontological Terms.
 
 ## Project setup
 ```
