@@ -1,4 +1,4 @@
-# bioportal
+# CartOnTe: Catcher for Ontological Terms.
 
 ## Project setup
 ```
