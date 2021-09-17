@@ -1,7 +1,7 @@
 <template>
 <div>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Form msg="Bioportal API Controller"/>
+  <Form msg="CARONTE: Catcher of Ontological Terms"/>
 </div>
 </template>
 
