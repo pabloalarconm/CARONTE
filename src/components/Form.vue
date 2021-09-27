@@ -1,6 +1,5 @@
 <template>
   <div class="counter">
-<<<<<<< Updated upstream
     <h1>CARONTE</h1>
     <h2>Catcher of Ontological Terms</h2>
         <hr>
@@ -9,22 +8,13 @@
           <div class="card-body">
             <h5 class="card-title">Choose terms from Bioportal</h5>
             <p class="card-text"> Choose your option and submit it</p>
-=======
-    <h1> Welcome to Caronte</h1>
-    <h4>Catcher of ontological terms</h4>
-        <hr>
-        <div class="card" style="width: 30rem;">
-          <div class="card-body">
-              <h5 class="card-title">Choose term from Bioportal</h5>
-              <p class="card-text"> Choose your option and submit it</p>
->>>>>>> Stashed changes
+
 
               <div class="form-group">
                 <label for="search">Term</label>
                 <input type="text"
                       v-model="term">
               </div>
-<<<<<<< Updated upstream
               <br>
               <div class="form-group">
                 <label for="ontology">Ontology</label>
@@ -37,20 +27,7 @@
                 </div>
 
               <br>
-=======
-            <br>
 
-            <div class="form-group">
-              <label for="ontology">Ontology</label>
-              <input type="text" placeholder="NCIT"
-                    v-model="ontology">
-            </div> 
-            <br>
-
-            <div id="example">
-              <button v-on:click="getBioportal(term,ontology)">Search</button>
-            </div>
->>>>>>> Stashed changes
             <select class="form-select" aria-label="Default select example">
               <option selected>Chosen Results:</option>
 
@@ -59,15 +36,11 @@
               </option>
 
             </select>
-<<<<<<< Updated upstream
             <br>
             <button type="button" class="btn btn-primary" v-on:click="getURL(selecty)">Submit</button>
             <br>
             <br>
             <p>{{result[0]}}</p>
-=======
-            <button type="button" class="btn btn-primary" v-on:click="getURL()">Submit</button>
->>>>>>> Stashed changes
           </div>
         </div>
         
@@ -113,7 +86,6 @@ export default {
       
       //console.log(names); 
     },
-<<<<<<< Updated upstream
     getURL: function(selecty) {
       console.log(selecty)
 
@@ -128,15 +100,6 @@ export default {
           this.result.push(result_url)
         }
       }
-=======
-    getURL:function(){
-      //console.log(this.respond[0]['collection'][0]['@id']);
-      var jp = require('jsonpath');
-      var names = jp.query('respond[0]', 'collection[*].@id[?(@.preflabel==Ocular Melanoma)]');
-      console.log(names);
-
->>>>>>> Stashed changes
-
     }
     //$..book[?(@.price==8.95)]
   }
